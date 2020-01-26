@@ -1,0 +1,27 @@
+Process A has 3 resources and requires 5 resources.
+Process A will request additional resources.
+Process A has 4 resources and required 5 resources
+3 total resources available
+Process A has 5 resources and required 5 resources
+2 total resources available
+Process A has all required resources
+Process B has 4 resources and requires 10 resources
+1 resources available
+Process B has 5 resources and requires 10 resources
+0 resources available
+required resources not met, trying later..
+0 Seconds
+1 Seconds
+2 Seconds
+Process A is done and has freed its resources
+Process B has 6 resources and requires 10 resources
+4 resources available
+Process B has 7 resources and requires 10 resources
+3 resources available
+Process B has 8 resources and requires 10 resources
+2 resources available
+Process B has 9 resources and requires 10 resources
+1 resources available
+Process B has 10 resources and requires 10 resources
+0 resources available
+Process B has all required resources
