@@ -7,21 +7,20 @@
 int
 main(int argc, char *argv[])
 {
-    struct stat sb;
+    struct stat st_mode;
 
    if (argc != 2) {
-        fprintf(stderr, "Usage: %s <pathname>\n", argv[0]);
+        fprintf(stderr, "input path you want to check: \n", argv[0]);
         exit(EXIT_FAILURE);
     }
 
-   if (stat(argv[1], &sb) == -1) {
+   if (stat(argv[1], &st_mode) == -1) {
         perror("stat");
         exit(EXIT_FAILURE);
    }
 
-   printf("I-node number:            %ld\n", (long) sb.st_ino);
-
-   printf("Link count:               %ld\n", (long) sb.st_nlink);
+   printf("i-node #:          %ld\n", (long) st_mode.st_ino);
+   printf("hard-links #:      %ld\n", (long) st_mode.st_nlink);
 
 
    exit(EXIT_SUCCESS);
